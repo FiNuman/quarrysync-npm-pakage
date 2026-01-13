@@ -1,10 +1,12 @@
+import { findWordInProject } from './project_word_finder';
 import { uuid } from './uuid';
 
-const officemate = {
+const quarrysync = {
   uuid,
+  findWordInProject: findWordInProject
 };
 
-export default officemate;
+export default quarrysync;
 
 // also allow this
-export { uuid };
+export { uuid, findWordInProject };

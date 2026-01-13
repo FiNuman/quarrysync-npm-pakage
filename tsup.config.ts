@@ -1,9 +1,12 @@
 import { defineConfig } from 'tsup';
 
 export default defineConfig({
-  entry: ['src/index.ts'],
+  entry: [
+    'src/index.ts',
+    "bin/quarrysync-find.ts"
+  ],
   format: ['esm', 'cjs'],
   dts: true,
   clean: true,
-  target: 'es2018',
+  target: "node18"
 });
