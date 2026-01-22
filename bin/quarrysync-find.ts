@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { findWordInProject } from "../src/project_word_finder";
+import { findWordInProject } from "../src/project_word_finder.js";
 
 const command = process.argv[2];
 const keyword = process.argv[3];
