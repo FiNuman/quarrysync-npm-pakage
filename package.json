@@ -1,10 +1,21 @@
 {
   "name": "quarrysync",
-  "version": "1.0.3",
+  "version": "1.0.4",
+  "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "bin": {
+    "quarrysync": "./dist/bin/quarrysync-find.js"
+  },
   "scripts": {
     "build": "tsup"
   },
@@ -12,8 +23,5 @@
     "@types/node": "^25.0.8",
     "tsup": "^7.0.0",
     "typescript": "^5.1.0"
-  },
-  "bin": {
-    "quarrysync": "dist/bin/quarrysync-find.js"
   }
 }

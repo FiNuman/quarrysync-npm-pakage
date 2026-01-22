@@ -1,5 +1,5 @@
-import { findWordInProject } from './project_word_finder';
-import { uuid } from './uuid';
+import { findWordInProject } from './project_word_finder.js';
+import { uuid } from './uuid.js';
 
 const quarrysync = {
   uuid,
