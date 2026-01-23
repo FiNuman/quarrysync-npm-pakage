@@ -7,7 +7,7 @@ export interface MatchResult {
     content: string;
 }
 
-const ALLOWED_EXT = [".js", ".jsx", ".ts", ".tsx"];
+const ALLOWED_EXT = [".js", ".jsx", ".ts", ".tsx" , ".css"];
 
 export function findWordInProject(
     keyword: string,
